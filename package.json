@@ -1,0 +1,28 @@
+{
+  "name": "ucl-stats-api",
+  "version": "1.0.0",
+  "description": "Uma API completa e escalável desenvolvida com Node.js e Express, projetada para fornecer informações detalhadas da UEFA Champions League. O projeto oferece acesso a dados sobre equipes, jogadores, partidas e classificações, com arquitetura bem estruturada e foco em performance. Ideal para treinar conceitos de back-end, arquitetura de software e manipulação de dados em tempo real.",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "start:dev": "tsx --env-file=.env src/server.ts",
+    "start": "tsx src/server.ts",
+    "start:watch": "tsx WATCH --env-file=.env src/server.ts",
+    "dist": "tsup src",
+    "start:dist": "npm run dist && --env-file=.env node/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
